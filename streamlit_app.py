@@ -62,7 +62,7 @@ def generate_response(question):
 result = ""
 
 with st.form(key='qa_form', clear_on_submit=True, border=True):
-    st.subheader('Основы метеорологии')
+    st.subheader('Основы метеорологии. DeepSeek')
     query_text = st.text_input(
     'Отправьте свой вопрос LLM:',
     placeholder='Здесь нужно написать вопрос',
