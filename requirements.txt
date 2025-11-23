@@ -1,1 +1,6 @@
 streamlit
+langchain_deepseek
+langchain_gigachat
+langchain_community
+faiss-cpu
+pypdf
