@@ -42,11 +42,13 @@ def generate_response(question):
     from langchain_core.prompts import ChatPromptTemplate
     
     template = """
-    Ты — полезный помощник для вопросно ответных приложений. Используй следующий контекст {context},
-    чтобы ответить на вопрос {question}.
+    Ты — преподаватель по метеорологии. Используй следующий контекст {context},
+    чтобы подробно и понятно для студентов ответить на вопрос {question}.
     Если ответа нет в контексте — скажи, что не знаешь.
     """
-    
+    # Ты — полезный помощник для вопросно ответных приложений. Используй следующий контекст {context},
+    # чтобы ответить на вопрос {question}.
+    # Если ответа нет в контексте — скажи, что не знаешь.
     prompt = ChatPromptTemplate.from_template(template)
     
     chain = prompt | llm | StrOutputParser()
